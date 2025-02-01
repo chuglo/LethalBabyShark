@@ -385,7 +385,7 @@ namespace LethalBabyShark
               LogIfDebugBuild($"Audio clip not found: {clipName}");
               return;
             }
-            // Spatial audio settings, no idea if this is gonna work lol
+            // Spatial audio settings
             creatureSFX.spatialBlend = 1f; // 3D sound
             creatureSFX.rolloffMode = AudioRolloffMode.Linear;
             creatureSFX.maxDistance = maxAudioDistance;

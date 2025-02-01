@@ -25,7 +25,6 @@ namespace LethalBabyShark
         private readonly float minAudioDistance = 1f;
         private readonly float maxAudioVolume = 1f;
 
-
         private enum State
         {
             SearchingForPlayer,
@@ -161,7 +160,6 @@ namespace LethalBabyShark
             }
         }
 
-
         private void HandlePlayerCollision(PlayerControllerB playerControllerB)
         {
             if (playerControllerB == null) return;
@@ -175,7 +173,6 @@ namespace LethalBabyShark
                 StartKillingBehavior();
             }
         }
-
 
         private void StartKillingBehavior()
         {
@@ -258,7 +255,6 @@ namespace LethalBabyShark
             }));
         }
 
-
         private IEnumerator WaitForAudio(float duration, System.Action onComplete)
         {
             yield return new WaitForSeconds(duration);
@@ -295,7 +291,6 @@ namespace LethalBabyShark
                 }
             }
         }
-
 
         public override void OnCollideWithPlayer(Collider other)
         {
